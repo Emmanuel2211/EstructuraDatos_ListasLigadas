@@ -23,7 +23,7 @@ class Lista(Coleccion[T]):
     @abstractmethod
     def devolver_indice_elemento(self, elemento: T) -> int:
         raise NotImplementedError
-    
+
     @abstractmethod
     def devolver_longitud(self) -> int:
         raise NotImplementedError
@@ -31,7 +31,7 @@ class Lista(Coleccion[T]):
     def __len__(self) -> int:
         """Devuelve la cantidad de elementos en la lista."""
         return self.devolver_longitud()
-    
+
     def __getitem__(self, indice: int) -> T:
         """
         Permite usar 'mi_lista[indice]'.
@@ -40,3 +40,4 @@ class Lista(Coleccion[T]):
         necesario sobreescribirlo.
         """
         return self.acceder(indice)
+
