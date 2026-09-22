@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module lista_ligada_simple</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">lista_ligada_simple</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/home/emmanuel/Documentos/Proyects/python_proyects/EDD_Practica4_ListasLigadasSimples/src/lista_ligada_simple.py">/home/emmanuel/Documentos/Proyects/python_proyects/EDD_Practica4_ListasLigadasSimples/src/lista_ligada_simple.py</a></td></tr></table>
+    <p><span class="code">Módulo&nbsp;lista_ligada_simple</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="lista.html#Lista">lista.Lista</a>(<a href="coleccion.html#Coleccion">coleccion.Coleccion</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="lista_ligada_simple.html#ListaLigadaSimple">ListaLigadaSimple</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ListaLigadaSimple">class <strong>ListaLigadaSimple</strong></a>(<a href="lista.html#Lista">lista.Lista</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#ListaLigadaSimple">ListaLigadaSimple</a>()&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="lista_ligada_simple.html#ListaLigadaSimple">ListaLigadaSimple</a></dd>
+<dd><a href="lista.html#Lista">lista.Lista</a></dd>
+<dd><a href="coleccion.html#Coleccion">coleccion.Coleccion</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="typing.html#Generic">typing.Generic</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ListaLigadaSimple-__init__"><strong>__init__</strong></a>(self) -&gt; None</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="ListaLigadaSimple-__iter__"><strong>__iter__</strong></a>(self) -&gt; Iterator[T]</dt><dd><span class="code">Permite&nbsp;recorrer&nbsp;la&nbsp;lista&nbsp;con&nbsp;'for&nbsp;elemento&nbsp;in&nbsp;lista:'.<br>
+&nbsp;<br>
+returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;(Generator):&nbsp;Generador&nbsp;que&nbsp;devuelve&nbsp;los&nbsp;elementos&nbsp;contenidos&nbsp;en<br>
+&nbsp;&nbsp;&nbsp;&nbsp;la&nbsp;lista</span></dd></dl>
+
+<dl><dt><a name="ListaLigadaSimple-__str__"><strong>__str__</strong></a>(self) -&gt; str</dt><dd><span class="code">Devuelve&nbsp;la&nbsp;representación&nbsp;en&nbsp;texto&nbsp;de&nbsp;la&nbsp;lista&nbsp;con&nbsp;el&nbsp;formato:<br>
+elem1&nbsp;-&gt;&nbsp;elem2&nbsp;-&gt;&nbsp;elem3<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Representacion&nbsp;en&nbsp;cadena&nbsp;de&nbsp;la&nbsp;lista</span></dd></dl>
+
+<dl><dt><a name="ListaLigadaSimple-acceder"><strong>acceder</strong></a>(self, indice: int) -&gt; T</dt><dd><span class="code">Recibe&nbsp;<a href="#ListaLigadaSimple">ListaLigadaSimple</a>&nbsp;y&nbsp;un&nbsp;entero&nbsp;i,&nbsp;y&nbsp;verifica&nbsp;que&nbsp;el&nbsp;índice&nbsp;dado<br>
+sea&nbsp;válido.&nbsp;Después&nbsp;recorre&nbsp;la&nbsp;lista&nbsp;y&nbsp;realiza&nbsp;un&nbsp;conte&nbsp;de&nbsp;los&nbsp;nodos<br>
+hasta&nbsp;i.<br>
+&nbsp;<br>
+return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;el&nbsp;elemento&nbsp;en&nbsp;el&nbsp;nodo&nbsp;número&nbsp;i</span></dd></dl>
+
+<dl><dt><a name="ListaLigadaSimple-agregar"><strong>agregar</strong></a>(self, elemento: T) -&gt; None</dt><dd><span class="code">Agrega&nbsp;un&nbsp;elemento&nbsp;al&nbsp;inicio&nbsp;de&nbsp;la&nbsp;lista<br>
+&nbsp;<br>
+return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;la&nbsp;misma&nbsp;<a href="#ListaLigadaSimple">ListaLigadaSimple</a>&nbsp;con&nbsp;un&nbsp;elemento&nbsp;más</span></dd></dl>
+
+<dl><dt><a name="ListaLigadaSimple-buscar"><strong>buscar</strong></a>(self, elemento: T) -&gt; bool</dt><dd><span class="code">Recorre&nbsp;la&nbsp;lista&nbsp;comparando&nbsp;cada&nbsp;elemento&nbsp;con&nbsp;el&nbsp;que&nbsp;se&nbsp;desea&nbsp;encontrar<br>
+&nbsp;<br>
+return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Un&nbsp;booleano&nbsp;que&nbsp;represanta&nbsp;si&nbsp;el&nbsp;elemento&nbsp;se&nbsp;encutra&nbsp;en<br>
+&nbsp;&nbsp;&nbsp;&nbsp;la&nbsp;lista&nbsp;(True)&nbsp;o&nbsp;no&nbsp;(False)</span></dd></dl>
+
+<dl><dt><a name="ListaLigadaSimple-devolver_indice_elemento"><strong>devolver_indice_elemento</strong></a>(self, elemento: T) -&gt; int</dt><dd><span class="code">Recibe&nbsp;<a href="#ListaLigadaSimple">ListaLigadaSimple</a>&nbsp;y&nbsp;un&nbsp;elemento.&nbsp;si&nbsp;la&nbsp;lista&nbsp;es&nbsp;vacia&nbsp;devuelve<br>
+error.&nbsp;Sino,&nbsp;recorre&nbsp;la&nbsp;lista&nbsp;hasta&nbsp;encontrar&nbsp;al&nbsp;elemento&nbsp;deseado<br>
+mientras&nbsp;va&nbsp;contando&nbsp;los&nbsp;nodos&nbsp;recorridos.<br>
+&nbsp;<br>
+return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Si&nbsp;encuentra&nbsp;el&nbsp;elemento,&nbsp;devuelve&nbsp;el&nbsp;conteo&nbsp;que&nbsp;tiene&nbsp;en&nbsp;ese<br>
+&nbsp;&nbsp;&nbsp;&nbsp;momento.</span></dd></dl>
+
+<dl><dt><a name="ListaLigadaSimple-devolver_longitud"><strong>devolver_longitud</strong></a>(self) -&gt; int</dt><dd><span class="code">Recie&nbsp;una&nbsp;<a href="#ListaLigadaSimple">ListaLigadaSimple</a>&nbsp;y&nbsp;devuelve&nbsp;el&nbsp;atribut&nbsp;longitud.<br>
+&nbsp;<br>
+return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;int&nbsp;longitud&nbsp;de&nbsp;<a href="#ListaLigadaSimple">ListaLigadaSimple</a></span></dd></dl>
+
+<dl><dt><a name="ListaLigadaSimple-eliminar"><strong>eliminar</strong></a>(self, elemento: T) -&gt; None</dt><dd><span class="code">Elimina&nbsp;la&nbsp;primera&nbsp;aparición&nbsp;del&nbsp;elementos&nbsp;a&nbsp;eliminar.<br>
+&nbsp;<br>
+return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;la&nbsp;misma&nbsp;lista&nbsp;pero&nbsp;con&nbsp;elemento&nbsp;deseado&nbsp;eliminado</span></dd></dl>
+
+<dl><dt><a name="ListaLigadaSimple-eliminar_indice"><strong>eliminar_indice</strong></a>(self, indice: int) -&gt; None</dt><dd><span class="code">Recibe&nbsp;<a href="#ListaLigadaSimple">ListaLigadaSimple</a>&nbsp;y&nbsp;un&nbsp;entero&nbsp;i,&nbsp;y&nbsp;verifica&nbsp;que&nbsp;el&nbsp;índice&nbsp;dado<br>
+sea&nbsp;válido.&nbsp;Después&nbsp;recorre&nbsp;la&nbsp;lista&nbsp;y&nbsp;cambia&nbsp;las&nbsp;referencias&nbsp;de&nbsp;los<br>
+nodos&nbsp;adyacentes&nbsp;para&nbsp;eliminar&nbsp;ese&nbsp;nodo.&nbsp;Disminuye&nbsp;la&nbsp;longitud&nbsp;en&nbsp;uno.<br>
+&nbsp;<br>
+return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;el&nbsp;elemento&nbsp;en&nbsp;el&nbsp;nodo&nbsp;número&nbsp;con&nbsp;índice&nbsp;i&nbsp;eliminado</span></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<dl><dt><strong>__orig_bases__</strong> = (lista.Lista[~T],)</dl>
+
+<dl><dt><strong>__parameters__</strong> = (~T,)</dl>
+
+<hr>
+Methods inherited from <a href="lista.html#Lista">lista.Lista</a>:<br>
+<dl><dt><a name="ListaLigadaSimple-__getitem__"><strong>__getitem__</strong></a>(self, indice: int) -&gt; T</dt><dd><span class="code">Permite&nbsp;usar&nbsp;'mi_lista[indice]'.<br>
+&nbsp;<br>
+Ya&nbsp;viene&nbsp;implementado&nbsp;en&nbsp;términos&nbsp;de&nbsp;<a href="#ListaLigadaSimple-acceder">acceder</a>(),&nbsp;no&nbsp;es<br>
+necesario&nbsp;sobreescribirlo.</span></dd></dl>
+
+<dl><dt><a name="ListaLigadaSimple-__len__"><strong>__len__</strong></a>(self) -&gt; int</dt><dd><span class="code">Devuelve&nbsp;la&nbsp;cantidad&nbsp;de&nbsp;elementos&nbsp;en&nbsp;la&nbsp;lista.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="coleccion.html#Coleccion">coleccion.Coleccion</a>:<br>
+<dl><dt><a name="ListaLigadaSimple-__contains__"><strong>__contains__</strong></a>(self, elemento: T) -&gt; bool</dt><dd><span class="code">Permite&nbsp;usar&nbsp;el&nbsp;operador&nbsp;'in':&nbsp;'elemento&nbsp;in&nbsp;coleccion'.<br>
+&nbsp;<br>
+Ya&nbsp;viene&nbsp;implementado&nbsp;en&nbsp;términos&nbsp;de&nbsp;<a href="#ListaLigadaSimple-buscar">buscar</a>().<br>
+Cada&nbsp;colección&nbsp;implmenta&nbsp;buscar&nbsp;de&nbsp;forma&nbsp;no&nbsp;abstracta.</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="coleccion.html#Coleccion">coleccion.Coleccion</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Class methods inherited from <a href="typing.html#Generic">typing.Generic</a>:<br>
+<dl><dt><a name="ListaLigadaSimple-__class_getitem__"><strong>__class_getitem__</strong></a>(...)</dt><dd><span class="code">Parameterizes&nbsp;a&nbsp;generic&nbsp;class.<br>
+&nbsp;<br>
+At&nbsp;least,&nbsp;parameterizing&nbsp;a&nbsp;generic&nbsp;class&nbsp;is&nbsp;the&nbsp;*main*&nbsp;thing&nbsp;this<br>
+method&nbsp;does.&nbsp;For&nbsp;example,&nbsp;for&nbsp;some&nbsp;generic&nbsp;class&nbsp;`Foo`,&nbsp;this&nbsp;is&nbsp;called<br>
+when&nbsp;we&nbsp;do&nbsp;`Foo[int]`&nbsp;-&nbsp;there,&nbsp;with&nbsp;`cls=Foo`&nbsp;and&nbsp;`params=int`.<br>
+&nbsp;<br>
+However,&nbsp;note&nbsp;that&nbsp;this&nbsp;method&nbsp;is&nbsp;also&nbsp;called&nbsp;when&nbsp;defining&nbsp;generic<br>
+classes&nbsp;in&nbsp;the&nbsp;first&nbsp;place&nbsp;with&nbsp;`class&nbsp;Foo[T]:&nbsp;...`.</span></dd></dl>
+
+<dl><dt><a name="ListaLigadaSimple-__init_subclass__"><strong>__init_subclass__</strong></a>(...)</dt><dd><span class="code">Function&nbsp;to&nbsp;initialize&nbsp;subclasses.</span></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>Iterator</strong> = typing.Iterator<br>
+<strong>Optional</strong> = typing.Optional<br>
+<strong>T</strong> = ~T</td></tr></table>
+</body></html>
